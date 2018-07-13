@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutMaster"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    >
+
+  <TextView
+      android:id="@+id/txtName"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:background="@color/colorPrimary"
+      android:clickable="true"
+      android:gravity="center_vertical"
+      android:paddingEnd="5dp"
+      android:paddingStart="5dp"
+      style="@style/MediumText.White"
+      />
+
+  <TextView
+      android:id="@+id/txtArrival1"
+      android:layout_width="match_parent"
+      android:layout_height="30dp"
+      android:background="?selectableItemBackground"
+      android:clickable="true"
+      android:gravity="center_vertical"
+      android:paddingEnd="5dp"
+      android:paddingStart="5dp"
+      style="@style/SmallText"
+      />
+
+  <TextView
+      android:id="@+id/txtArrival2"
+      android:layout_width="match_parent"
+      android:layout_height="30dp"
+      android:background="?selectableItemBackground"
+      android:clickable="true"
+      android:gravity="center_vertical"
+      android:paddingEnd="5dp"
+      android:paddingStart="5dp"
+      style="@style/SmallText"
+      />
+
+  <TextView
+      android:id="@+id/txtArrival3"
+      android:layout_width="match_parent"
+      android:layout_height="30dp"
+      android:background="?selectableItemBackground"
+      android:clickable="true"
+      android:gravity="center_vertical"
+      android:paddingEnd="5dp"
+      android:paddingStart="5dp"
+      style="@style/SmallText"
+      />
+
+</LinearLayout>

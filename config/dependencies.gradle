@@ -1,0 +1,106 @@
+allprojects {
+  repositories {
+    jcenter()
+  }
+}
+
+ext {
+  androidMinSdkVersion = 22
+  androidTargetSdkVersion = 27
+  androidCompileSdkVersion = 27
+
+  supportLibraryVersion = "27.0.2"
+  androidArchVersion = "1.0.0-rc1"
+  daggerVersion = "2.11"
+  butterKnifeVersion = "8.7.0"
+  rxJavaVersion = "2.1.0"
+  rxAndroidVersion = "2.0.1"
+  timberVersion = "4.5.1"
+  playServicesVersion = "11.4.2"
+  retrofitVersion = "2.1.0"
+  okHttpVersion = "3.4.1"
+  rxRelayVersion = "2.0.0"
+  rxLintVersion = "1.6"
+
+  presentationDependencies = [daggerCompiler          : "com.google.dagger:dagger-compiler:${daggerVersion}",
+                              dagger                  : "com.google.dagger:dagger:${daggerVersion}",
+                              butterKnife             : "com.jakewharton:butterknife:${butterKnifeVersion}",
+                              butterKnifeCompiler     : "com.jakewharton:butterknife-compiler:${butterKnifeVersion}",
+                              recyclerView            : "com.android.support:recyclerview-v7:${recyclerViewVersion}",
+                              appCompat               : "com.android.support:appcompat-v7:${appCompatVersion}",
+                              designSupport           : "com.android.support:design:${designSupportVersion}",
+                              cardDesign              : "com.android.support:cardview-v7:${cardDesignVersion}",
+                              rxJava                  : "io.reactivex:rxjava:${rxJavaVersion}",
+                              rxAndroid               : "io.reactivex:rxandroid:${rxAndroidVersion}",
+                              javaxAnnotation         : "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+                              androidAnnotations      : "com.android.support:support-annotations:${androidAnnotationsVersion}",
+                              okHttp                  : "com.squareup.okhttp3:okhttp:${okHttpVersion}",
+                              okHttpLoggingInterceptor: "com.squareup.okhttp3:logging-interceptor:${okHttpVersion}",
+                              retrofit                : "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+                              retrofitGsonConverter   : "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
+                              retrofitRxAdapter       : "com.squareup.retrofit2:adapter-rxjava:${retrofitVersion}",
+                              gson                    : "com.google.code.gson:gson:${gsonVersion}",
+                              priorityJobQueue        : "com.birbit:android-priority-jobqueue:${priorityJobQueueVersion}",
+                              pahoMQTT3               : "org.eclipse.paho:org.eclipse.paho.client.mqttv3:${pahoMQTT3Version}",
+                              rxBindings              : "com.jakewharton.rxbinding:rxbinding:${rxBindingsVersion}",
+                              picasso                 : "com.squareup.picasso:picasso:${picassoVersion}",
+                              picassoDownloader       : "com.jakewharton.picasso:picasso2-okhttp3-downloader:${picassoDownloaderVersion}",
+                              byteUnits               : "com.jakewharton.byteunits:byteunits:${byteUnitsVersion}",
+                              rebound                 : "com.facebook.rebound:rebound:${reboundVersion}",
+                              rxSharedPreferences     : "com.f2prateek.rx.preferences:rx-preferences:${rxSharedPreferencesVersion}",
+                              libPhoneNumber          : "com.googlecode.libphonenumber:libphonenumber:${libPhoneNumberVersion}",
+                              exoPlayer               : "com.google.android.exoplayer:exoplayer:${exoPlayerVersion}",
+                              vlcPlayer               : "de.mrmaffen:vlc-android-sdk:${vlcPlayerVersion}",
+                              firebaseMessaging       : "com.google.firebase:firebase-messaging:${firebaseMessagingVersion}",
+                              firebaseCrashReporting  : "com.google.firebase:firebase-crash:${firebaseCrashReportingVersion}",
+                              circularProgressView    : "com.github.rahatarmanahmed:circularprogressview:${circularProgressViewVersion}",
+                              rxLocation              : "pl.charmas.android:android-reactive-location:${rxLocationVersion}",
+                              googlePlayLocation      : "com.google.android.gms:play-services-location:${googlePlayLocationVersion}",
+                              googlePlayBase          : "com.google.android.gms:play-services-base:${googlePlayBaseVersion}",
+                              googlePlayGcm           : "com.google.android.gms:play-services-gcm:${googlePlayGCMVersion}",
+                              rxPermissions           : "com.tbruyelle.rxpermissions:rxpermissions:${rxPermissionsVersion}",
+                              facebook                : "com.facebook.android:facebook-android-sdk:${facebookVersion}",
+                              facebookAccountKit      : "com.facebook.android:account-kit-sdk:${facebookAccountKitVersion}",
+                              glide                   : "com.github.bumptech.glide:glide:${glideVersion}",
+                              glideOKHttp             : "com.github.bumptech.glide:okhttp3-integration:${glideOKHttpVersion}",
+                              multiDex                : "com.android.support:multidex:${multiDexVersion}",
+                              confetti                : "com.github.jinatonic.confetti:confetti:${confettiVersion}",
+                              mixpanel                : "com.mixpanel.android:mixpanel-android:${mixpanelVersion}",
+                              imageCropper            : "com.theartofdev.edmodo:android-image-cropper:${imageCropperVersion}",
+                              firebaseInvites         : "com.google.firebase:firebase-invites:${firebaseInvitesVersion}",
+                              firebaseRemote          : "com.google.firebase:firebase-config:${firebaseRemoteVersion}",
+                              firebaseStorage         : "com.google.firebase:firebase-storage:${firebaseStorageVersion}",
+                              recyclerViewAnimators   : "jp.wasabeef:recyclerview-animators:${recyclerViewAnimatorsVersion}",
+                              branchIo                : "io.branch.sdk.android:library:${branchIoVersion}",
+                              timber                  : "com.jakewharton.timber:timber:${timberVersion}",
+                              blurView                : "com.eightbitlab:blurview:${blurViewVersion}",
+                              rxAppState              : "com.jenzz:RxAppState:${rxAppStateVersion}",
+                              webSocket               : "com.neovisionaries:nv-websocket-client:${webSocketVersion}",
+                              flexbox                 : "com.google.android:flexbox:${flexboxVersion}",
+                              easyRS                  : "io.github.silvaren:easyrs:${easyRSVersion}",
+                              instacapture            : "com.github.tarek360:instacapture:${instacaptureVersion}",
+                              guava                   : "com.google.guava:guava:${guavaVersion}",
+                              googleVision            : "com.google.android.gms:play-services-vision:${googlePlayVisionVersion}",
+                              jodatime                : "net.danlew:android.joda:${jodatimeVersion}",
+                              shortcutBadget          : "me.leolin:shortcutbadger:${shortcutBadgerVersion}",
+                              constraintLayout        : "com.android.support.constraint:constraint-layout:${constraintLayoutVersion}",
+                              AVLoadingIndicatorView  : "com.wang.avi:library:${loadingIndicatorVersion}",
+                              firebaseCore            : "com.google.firebase:firebase-core:${firebaseCoreVersion}"]
+
+
+  presentationTestDependencies = [mockito           : "org.mockito:mockito-core:${mockitoVersion}",
+                                  dexmaker          : "com.google.dexmaker:dexmaker:${dexmakerVersion}",
+                                  dexmakerMockito   : "com.google.dexmaker:dexmaker-mockito:${dexmakerVersion}",
+                                  espresso          : "com.android.support.test.espresso:espresso-core:${espressoVersion}",
+                                  androidAnnotations: "com.android.support:support-annotations:${androidAnnotationsVersion}",
+                                  testingSupportLib : "com.android.support.test:testing-support-lib:${testingSupportLibVersion}",
+                                  jUnit             : "junit:junit:${jUnitVersion}"]
+
+  developmentDependencies =
+      [leakCanary       : "com.squareup.leakcanary:leakcanary-android:${leakCanaryVersion}",
+       stetho           : "com.facebook.stetho:stetho:${stethoVersion}",
+       stethoOkHttp     : "com.facebook.stetho:stetho-okhttp3:${stethoVersion}",
+       stethoRealm      : "com.uphyca:stetho_realm:${stethoRealmVersion}",
+       takt             : "jp.wasabeef:takt:${taktVersion}",
+       androidDevMetrics: "com.frogermcs.androiddevmetrics:androiddevmetrics-plugin:${androidDevMetricsVersion}"]
+}
